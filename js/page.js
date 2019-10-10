@@ -1,1 +1,0 @@
-var A=document.querySelector("audio"),m=document.querySelector(".m"),i=true;function getPaly(){if(i==true){A.play();i=false;m.classList.remove("pause");m.classList.add("rotate")}else{A.pause();i=true;m.classList.add("pause")}}m.onclick=getPaly;
