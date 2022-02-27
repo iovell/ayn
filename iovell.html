@@ -149,19 +149,31 @@
 	<p class="time">Je t'aime tant </p>
  </body>
 	<script type="text/javascript">
-	function DateDiff(sDate1, sDate2) {
-		var aDate, oDate1, oDate2, iDays;
-		aDate = sDate1.split("-")
-		oDate1 = new Date(aDate[1] + '-' + aDate[2] + '-' + aDate[0]) 
-		aDate = sDate2.split("-")
-		oDate2 = new Date(aDate[1] + '-' + aDate[2] + '-' + aDate[0])
-		iDays = parseInt(Math.abs(oDate1 - oDate2) / 1000 / 60 / 60 / 24) 
-		return iDays
-	}
-	var d = new Date(),
-		now = d.getFullYear()+ "-" + Number(d.getMonth() + 1) + "-" + d.getDate(),
-		p = document.querySelector(".time");
-	p.innerHTML += DateDiff("2016-12-24", now) + "T";
-	console.log("我如此爱你");
+		function DateDiff(sDate1, sDate2) {
+		    let aDate = sDate1.split('-'),
+			oDate1 = new Date(aDate[1] + '-' + aDate[2] + '-' + aDate[0]);
+			aDate = sDate2.split('-');
+		    let oDate2 = new Date(aDate[1] + '-' + aDate[2] + '-' + aDate[0]);
+		    return parseInt(Math.abs(oDate1 - oDate2) / 1000 / 60 / 60 / 24);
+		}
+
+		function Ayn(name, relation, time) {
+		    this.name = name;
+		    this.relation = relation;
+		    this.time = time;
+		}
+
+		const d = document.querySelector(".time");	
+		const ayn = new Ayn('ayn', "Je t'aime tant", '2016-12-24');
+
+		Ayn.prototype.Acquaintance = function () {
+		    let d = new Date(),
+			now = d.getFullYear() + '-' + Number(d.getMonth() + 1) + '-' + d.getDate();
+		    return DateDiff(this.time, now) + 'T';
+		};
+
+		d.innerHTML += ayn.Acquaintance()
+		console.log(`${ayn.name} ${ayn.relation} ${ayn.Acquaintance()}`);
+		console.log("我如此爱你");
 	</script>
 </html>
