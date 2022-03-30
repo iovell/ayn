@@ -1,179 +1,194 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <meta name="Generator" content="EditPlus®">
-  <meta name="Author" content="">
-  <meta name="Keywords" content="">
-  <meta name="Description" content="">
-  <title>Je t'aime tant</title>
-  <style type="text/css">
-	body {
-		margin: 0;
-		display: grid;
-		background-color: #de1c31;
-	}
-	.wrap {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
-		width: 245px;
-	}
-	.wrap span {
-		display: block;
-		float: left;
-		width: 25px;
-		height: 25px;
-		background-color: white;
-		margin-left: 2px;
-		margin-bottom: 2px;
-		opacity: 1;
-		text-align: center;
-		line-height: 25px;
-		color: #de1c31;
-		animation: love 6s ease-out infinite;
-		transform: translateY(-480px);
-		font-size: 16px;
-	}
-	.wrap .transparent {
-		background: none;
-	}
-	.wrap .delay1 {
-		animation-delay: .4s;
-	}
-	.wrap .delay2 {
-		animation-delay: .3s;
-	}
-	.wrap .delay3 {
-		animation-delay: .2s;
-	}
-	.wrap .delay4 {
-		animation-delay: .1s;
-	}
-	p {
-		margin: 10px auto;
-		color: white;
-		font-size: 36px;
-		line-height: 30px;
-	}
-	@keyframes love {
-		35%,
-		50%,
-		65% { 
-			opacity: 1;
-			transform: translateX(0px);
-		}
-		100% { 
-			opacity: 0;
-			transform: translateY(240px);
-		}
-	}
-  </style>
- </head>
- <body>
-	<div class="wrap">
-		<span class="transparent"></span>
-		<span></span>
-		<span></span>
-		<span class="transparent delay4"></span>
-		<span class="transparent delay1"></span>
-		<span class="transparent delay2"></span>
-		<span class="delay1"></span>
-		<span class="delay4"></span>
-		<span class="transparent"></span>
-		<span class="delay3"></span>
-		<span class="delay2"></span>
-		<span class="delay2"></span>
-		<span class="delay4"></span>
-		<span class="transparent"></span>
-		<span class="delay3"></span>
-		<span class="delay3"></span>
-		<span></span>
-		<span class="delay2"></span>
-		<span></span>
-		<span class="delay1"></span>
-		<span class="delay4"></span>
-		<span class="delay2"></span>
-		<span></span>
-		<span class="delay1"></span>
-		<span></span>
-		<span class="delay4"></span>
-		<span class="delay1"></span>
-		<span class="delay2"></span>
-		<span></span>
-		<span></span>
-		<span class="delay3"></span>
-		<span class="delay2"></span>
-		<span class="delay1"></span>
-		<span></span>
-		<span class="delay2"></span>
-		<span></span>
-		<span class="transparent delay2"></span>
-		<span></span>
-		<span class="delay1"></span>
-		<span></span>
-		<span></span>
-		<span class="delay1"></span>
-		<span class="delay4"></span>
-		<span></span>
-		<span class="transparent delay1"></span>
-		<span class="transparent delay2"></span>
-		<span class="transparent delay3"></span>
-		<span></span>
-		<span class="delay3"></span>
-		<span class="delay2"></span>
-		<span class="delay4"></span>
-		<span></span>
-		<span class="transparent delay3"></span>
-		<span class="transparent delay4"></span>
-		<span class="transparent delay2"></span>
-		<span class="transparent delay1"></span>
-		<span class="transparent delay4"></span>
-		<span class="delay3"></span>
-		<span class="delay4"></span>
-		<span class="delay3"></span>
-		<span class="transparent delay2"></span>
-		<span class="transparent delay1"></span>
-		<span class="transparent"></span>
-		<span class="transparent"></span>
-		<span class="transparent"></span>
-		<span class="transparent"></span>
-		<span class="transparent"></span>
-		<span class="delay1"></span>
-		<span class="transparent"></span>
-		<span class="transparent"></span>
-		<span class="transparent"></span>
-		<span class="transparent"></span>
-	</div>
-	<p class="time">Je t'aime tant </p>
- </body>
-	<script type="text/javascript">
-		function DateDiff(sDate1, sDate2) {
-		    let aDate = sDate1.split('-'),
-			oDate1 = new Date(aDate[1] + '-' + aDate[2] + '-' + aDate[0]);
-			aDate = sDate2.split('-');
-		    let oDate2 = new Date(aDate[1] + '-' + aDate[2] + '-' + aDate[0]);
-		    return parseInt(Math.abs(oDate1 - oDate2) / 1000 / 60 / 60 / 24);
-		}
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="Generator" content="EditPlus®" />
+        <meta name="Author" content="" />
+        <meta name="Keywords" content="" />
+        <meta name="Description" content="" />
+        <title>Je t'aime tant</title>
+        <style type="text/css">
+            body {
+                margin: 0;
+                display: grid;
+                background-color: #de1c31;
+            }
+            .wrap {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 245px;
+            }
+            .wrap span {
+                display: block;
+                float: left;
+                width: 25px;
+                height: 25px;
+                background-color: white;
+                margin-left: 2px;
+                margin-bottom: 2px;
+                opacity: 1;
+                text-align: center;
+                line-height: 25px;
+                color: #de1c31;
+                animation: love 6s ease-out infinite;
+                transform: translateY(-480px);
+                font-size: 16px;
+            }
+            .wrap .transparent {
+                background: none;
+            }
+            .wrap .delay1 {
+                animation-delay: 0.4s;
+            }
+            .wrap .delay2 {
+                animation-delay: 0.3s;
+            }
+            .wrap .delay3 {
+                animation-delay: 0.2s;
+            }
+            .wrap .delay4 {
+                animation-delay: 0.1s;
+            }
+            p {
+                margin: 10px auto;
+                color: white;
+                font-size: 36px;
+                line-height: 30px;
+            }
+            @keyframes love {
+                35%,
+                50%,
+                65% {
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+                100% {
+                    opacity: 0;
+                    transform: translateY(240px);
+                }
+            }
 
-		function Ayn(name, relation, time) {
-		    this.name = name;
-		    this.relation = relation;
-		    this.time = time;
-		}
+            a {
+                display: block;
+                width: 100px;
+                height: 18px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 30%;
+                font-size: 24px;
+                text-decoration: none;
+                color: beige;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <span class="transparent"></span>
+            <span></span>
+            <span></span>
+            <span class="transparent delay4"></span>
+            <span class="transparent delay1"></span>
+            <span class="transparent delay2"></span>
+            <span class="delay1"></span>
+            <span class="delay4"></span>
+            <span class="transparent"></span>
+            <span class="delay3"></span>
+            <span class="delay2"></span>
+            <span class="delay2"></span>
+            <span class="delay4"></span>
+            <span class="transparent"></span>
+            <span class="delay3"></span>
+            <span class="delay3"></span>
+            <span></span>
+            <span class="delay2"></span>
+            <span></span>
+            <span class="delay1"></span>
+            <span class="delay4"></span>
+            <span class="delay2"></span>
+            <span></span>
+            <span class="delay1"></span>
+            <span></span>
+            <span class="delay4"></span>
+            <span class="delay1"></span>
+            <span class="delay2"></span>
+            <span></span>
+            <span></span>
+            <span class="delay3"></span>
+            <span class="delay2"></span>
+            <span class="delay1"></span>
+            <span></span>
+            <span class="delay2"></span>
+            <span></span>
+            <span class="transparent delay2"></span>
+            <span></span>
+            <span class="delay1"></span>
+            <span></span>
+            <span></span>
+            <span class="delay1"></span>
+            <span class="delay4"></span>
+            <span></span>
+            <span class="transparent delay1"></span>
+            <span class="transparent delay2"></span>
+            <span class="transparent delay3"></span>
+            <span></span>
+            <span class="delay3"></span>
+            <span class="delay2"></span>
+            <span class="delay4"></span>
+            <span></span>
+            <span class="transparent delay3"></span>
+            <span class="transparent delay4"></span>
+            <span class="transparent delay2"></span>
+            <span class="transparent delay1"></span>
+            <span class="transparent delay4"></span>
+            <span class="delay3"></span>
+            <span class="delay4"></span>
+            <span class="delay3"></span>
+            <span class="transparent delay2"></span>
+            <span class="transparent delay1"></span>
+            <span class="transparent"></span>
+            <span class="transparent"></span>
+            <span class="transparent"></span>
+            <span class="transparent"></span>
+            <span class="transparent"></span>
+            <span class="delay1"></span>
+            <span class="transparent"></span>
+            <span class="transparent"></span>
+            <span class="transparent"></span>
+            <span class="transparent"></span>
+        </div>
+        <p class="time">Je t'aime tant</p>
+        <a href="./index.html">home</a>
+    </body>
+    <script type="text/javascript">
+        function DateDiff(sDate1, sDate2) {
+            let aDate = sDate1.split('-'),
+                oDate1 = new Date(aDate[1] + '-' + aDate[2] + '-' + aDate[0]);
+            aDate = sDate2.split('-');
+            let oDate2 = new Date(aDate[1] + '-' + aDate[2] + '-' + aDate[0]);
+            return parseInt(Math.abs(oDate1 - oDate2) / 1000 / 60 / 60 / 24);
+        }
 
-		const d = document.querySelector(".time");	
-		const ayn = new Ayn('ayn', "Je t'aime tant", '2016-12-24');
+        function Ayn(name, relation, time) {
+            this.name = name;
+            this.relation = relation;
+            this.time = time;
+        }
 
-		Ayn.prototype.Acquaintance = function () {
-		    let d = new Date(),
-			now = d.getFullYear() + '-' + Number(d.getMonth() + 1) + '-' + d.getDate();
-		    return DateDiff(this.time, now) + 'T';
-		};
+        const d = document.querySelector('.time');
+        const ayn = new Ayn('ayn', "Je t'aime tant", '2016-12-24');
 
-		d.innerHTML += ayn.Acquaintance()
-		console.log(`${ayn.name} ${ayn.relation} ${ayn.Acquaintance()}`);
-		console.log("我如此爱你");
-	</script>
+        Ayn.prototype.Acquaintance = function () {
+            let d = new Date(),
+                now = d.getFullYear() + '-' + Number(d.getMonth() + 1) + '-' + d.getDate();
+            return DateDiff(this.time, now) + 'T';
+        };
+
+        d.innerHTML += ' ' + ayn.Acquaintance();
+        console.log(`${ayn.name} ${ayn.relation} ${ayn.Acquaintance()}`);
+        console.log('我如此爱你');
+    </script>
 </html>
