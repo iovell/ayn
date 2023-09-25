@@ -151,10 +151,9 @@ body {
 }
 
 @media screen and (max-width: 960px) {
-    .middle h1 {
-        font-size: 50px;
-        background-size: 150%;
-    }
+    .now {
+		top: 300px;
+	}
 }
 
 .footer span {
